@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-app="staff">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Librairie Samir · Shop</title>
+<meta name="theme-color" content="#2346A8">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Samir Shop">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body class="auth">
+<div class="app">
+  <header class="top"><div class="top-in">
+    <div class="brand"><b id="shopName">Librairie Samir Shoker</b><span id="subTitle"></span></div>
+    <div class="langs" role="group" aria-label="Language">
+      <button data-a="lang" data-v="ar" id="l-ar">ع</button><button data-a="lang" data-v="fr" id="l-fr">FR</button><button data-a="lang" data-v="en" id="l-en">EN</button>
+    </div>
+    <button class="iconbtn" data-a="logout" aria-label="Log out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4h4v16h-4M10 8l-4 4 4 4M6 12h10"/></svg></button>
+  </div></header>
+  <div class="netbar" id="netBar" hidden></div>
+  <nav class="tabs" id="tabs"></nav>
+  <main id="view"><div class="empty"><p>…</p></div></main>
+</div>
+<div id="modal"></div>
+<div class="toast" id="toast" hidden><div></div></div>
+<script type="module">
+  import { boot } from "../shared/app.js";
+  boot("staff");
+</script>
+</body>
+</html>

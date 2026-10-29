@@ -1,0 +1,13 @@
+{
+  "name": "Librairie Samir · Shop",
+  "short_name": "Samir Shop",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F2F4F8",
+  "theme_color": "#2346A8",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
